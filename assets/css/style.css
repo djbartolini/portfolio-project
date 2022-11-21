@@ -29,19 +29,8 @@ body {
     }
 }
 
-@keyframes spin {
-    0% {
-        transform: rotate(-45deg);
-        opacity: 0;
-    }
-    100% {
-        transform: rotate(0deg);
-        opacity: 1;
-    }
-}
-
 header {
-    background-image: url(./images/circle-thing.png);
+    background-image: url(../images/circle-thing.png);
     background-repeat: no-repeat;
     background-position: 50%;
     animation: fadeIn 2000ms ease-in 0s 1;
@@ -72,21 +61,21 @@ header p {
 
 h2 {
     color: white;
+    font-size: 150%;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 nav {
     display: flex;
     justify-content: center;
-    background-image: url(./images/gradient-nav.jpg);
-    padding-right: 30px;
+    background-image: url(../images/gradient-nav.jpg);
     border-radius: 10px;
     animation: fadeIn 1750ms ease-in 0s 1;
+    max-width: 95%;
 }
 
 
 button {
-    background-image: url(./images/1802211250-huge.jpg);
     color: black;
     font: Trebuchet;
     text-transform: uppercase;
@@ -101,25 +90,45 @@ button:hover {
     transform: scaleX(1.075);
 }
 
-main {
+.center {
+    max-width: 1140px;
     display: flex;
     flex-direction: column;
+    align-items: center;
     padding: 10px;
-    /* padding: 15px; */
+    margin: 0 auto;
+    
 }
 
 .container {
-    display: block;
+    /* display: block; */
     transition: all 250ms ease;
+    border: 4px groove #CD5175;
+    border-radius: 20px;
+    margin: 10px 0;
 }
 
 .container:hover {
     transform: translateX(5px);
-    box-shadow: 2px 2px 2px black;
+    box-shadow: 2px 2px 2px darkslategray;
 }
 
-.card {
-    justify-content: center;
+.card-header {
+    text-indent: 15px;
+    padding: 10px;
+}
+
+.main-card {
+    max-width: 1140px;
+    border-radius: 20px;
+    margin: 5px;
+}
+
+.small-card {
+    max-width: 650px;
+    min-width: 400px;
+    border-radius: 15px;
+    margin: 5px;
 }
 
 .content {
@@ -145,18 +154,14 @@ main {
     border-radius: 30px;
 }
 
-
-.card img {
-    width: 65vw;
-    transform: translateX(15px);
-    border-radius: 30px;
-    display: flex;
-    justify-content: center;
+.contact-me {
+    
 }
 
-
-.contact-me {
+footer {
     display: flex;
-    flex-direction: column;
+    justify-content: center;
     justify-content: space-between;
+    background-image: url(../images/gradient-nav.jpg);
+    border-radius: 10px;
 }
