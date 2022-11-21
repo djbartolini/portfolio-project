@@ -68,10 +68,10 @@ h2 {
 nav {
     display: flex;
     justify-content: center;
+    margin: 0 25px;
     background-image: url(../images/gradient-nav.jpg);
     border-radius: 10px;
     animation: fadeIn 1750ms ease-in 0s 1;
-    max-width: 95%;
 }
 
 
@@ -154,14 +154,23 @@ button:hover {
     border-radius: 30px;
 }
 
-.contact-me {
-    
-}
 
 footer {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     justify-content: space-between;
+    margin: 0 25px 5px 25px;
+    padding-bottom: 30px;
     background-image: url(../images/gradient-nav.jpg);
     border-radius: 10px;
+}
+
+.contact-me {
+    display: flex;
+    justify-content: center;
+}
+
+.contact-me a {
+    justify-content: space-between;
+    /* margin: 0 15px; */
 }
