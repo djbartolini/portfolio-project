@@ -2,37 +2,49 @@
     box-sizing: border-box;
 }
 
+:root {
+    --dark: #2e2c2f;
+    --light: #f7f0f5;
+    --bright: #e55934;
+    --warm: #50808e;
+    --secondary: #93e5ab;
+}
+
 body {
-    background-color: black;
+    background-color: var(--dark);
 }
 
 header {
-    background-image: url(../images/circle-thing.png);
+    background-image: url(../images/tree-header.jpeg);
     background-repeat: no-repeat;
     background-position: 50%;
-    animation: fadeIn 2000ms ease-in 0s 1;
-    color: white;
+    /* animation: fadeIn 2000ms ease-in 0s 1; */
+    color: var(--light);
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    display: flex;
+    /* display: flex;
     flex-direction: column;
-    justify-content: center;
-    min-height: 35vh;
-    max-height: 100vh;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
+    justify-content: center; */
+    min-height: 33vh;
+    margin: 0 25px;
+    border-radius: 20px;
     text-align: center;
     letter-spacing: 8px;
     word-spacing: 10px;}
 
 
 header h1 {
-    animation: 700ms ease-in 0s 1 fadeIn;
+    /* animation: 700ms ease-in 0s 1 fadeIn; */
+    margin: 0 auto;
+    padding: 60px;
+    font-size: 32px;
 }
 
 header p {
-    color: #CD5175;
-    animation: 1500ms ease-in 0s 1 fadeIn;
-
+    /* color: #CD5175; */
+    /* animation: 1500ms ease-in 0s 1 fadeIn; */
+    padding-top: 70px;
+    font-size: 22px;
+    color: var(--secondary);
 }
 
 
@@ -47,16 +59,22 @@ nav {
     justify-content: center;
     margin: 0 25px;
     padding: 20px 0;
-    background-image: url(../images/gradient-nav.jpg);
+    background-image: linear-gradient(to right, var(--warm), var(--secondary), var(--warm));
     border-radius: 10px;
-    animation: fadeIn 1750ms ease-in 0s 1;
+    /* animation: fadeIn 1750ms ease-in 0s 1; */
 }
 
 nav ul a {
-    margin: 0 15px;
+    margin: 0 25px;
     color: white;
     font: Verdana;
     font-size: 20px;
+    text-decoration: none;
+
+}
+
+nav ul a:hover {
+    text-decoration: underline;
 }
 
 .center {
@@ -70,7 +88,7 @@ nav ul a {
 }
 
 .container {
-    margin: 10px 20px 10px 10px 10px;
+    margin: 10px 20px 10px 10px;
 }
 
 .card-header {
@@ -206,10 +224,10 @@ footer ul a {
 }
 
 
-@keyframes fadeIn {
+/* @keyframes fadeIn {
     0% {opacity: 0;}
     100% {opacity: 1}
-}
+} */
 
 @media screen and (max-width: 768px) {
     .container {
