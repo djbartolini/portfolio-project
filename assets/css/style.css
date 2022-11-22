@@ -95,7 +95,7 @@ nav ul a:hover {
     text-indent: 15px;
     padding: 10px;
     margin-bottom: 10 px;
-    border-bottom: solid #CD5175;
+    border-bottom: solid var(--warm)
 }
 
 .about-me {
@@ -107,7 +107,7 @@ nav ul a:hover {
 
 .about-me p {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: white;
+    color: var(--light);
     float: left;
     text-align: left;
     line-height: 200%;
@@ -170,6 +170,7 @@ nav ul a:hover {
     margin: 5px;
     display: inline;
     opacity: 75%;
+    max-width: calc(50% - 25px);
 }    
 
 .coming-soon-left {
@@ -205,7 +206,7 @@ footer {
 }
 
 .footer-head {
-    border-bottom: solid black;
+    border-bottom: solid var(--warm);
 }
 
 .footer-head h2 {
