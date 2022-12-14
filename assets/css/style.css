@@ -53,8 +53,6 @@ nav {
     padding: 20px 0;
     background-image: linear-gradient(to right, var(--dark), var(--bright), var(--dark));
     border-radius: 10px;
-    /* border: solid var(--dark); */
-    /* animation: fadeIn 1750ms ease-in 0s 1; */
 }
 
 nav ul a {
@@ -164,7 +162,6 @@ footer {
     justify-content: space-between;
     margin: 0 25px 5px 25px;
     padding-bottom: 30px;
-    background-image: url(../images/gradient-nav.jpg);
     border-radius: 10px;
 }
 
